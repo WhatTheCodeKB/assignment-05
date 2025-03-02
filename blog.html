@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-[#F4F7FF]">
+    <section class="max-w-screen-2xl mx-auto pt-6 mb-6 px-2 md:px-4">
+        <nav class="bg-white rounded-2xl shadow">
+            <div class="flex items-center justify-between px-6 py-4">
+                <div class="flex items-center gap-x-3">
+                    <img src="./assets/logo.png" alt="Navigation ber logo">
+                    <h3 class="text-4xl hidden md:block">Dev<span class="font-bold">Board</span>
+                    </h3>
+                </div>
+                <div>
+                    <button id="click-nav-btn" class="bg-[#3752FD] rounded-lg py-[10px] px-[20px] text-white font-medium cursor-pointer">Back to Desk</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <h2 class="font-bold text-4xl md:text-5xl text-center my-10">Blogs</h2>
+
+    <section class="max-w-screen-2xl mx-auto space-y-10 pb-10 px-2 md:px-4">
+        <!-- question no1 -->
+        <div class="bg-white rounded-xl p-7 shadow">
+            <h3 class="font-bold text-[20px] md:text-3xl border-b-2 border-dashed border-blue-100 mb-5 pb-5">
+                Question-1: What are the different ways to select an element in the DOM?
+            </h3>
+            <p class="text-[16px] md:text-[20px] text-gray-600"> 
+                "getElementsByTagName()"- This method returns all the elements that matches the specified Tag name.<br>
+                "getElementsByClassName()"- This method returns all the elements that matches the specified Class name.<br>
+                "getElementById()"- This method returns only the first matched element while ignoring the remaining.<br>
+                "querySelector()"- This one returns the first element that matches the specified CSS selector in the document.<br>
+                "querySelectorAll()"- This method returns all the elements that match the specified CSS selector in the document.
+            </p>
+        </div>
+        <!-- question no2 -->
+        <div class="bg-white rounded-xl p-7 shadow">
+            <h3 class="font-bold text-[20px] md:text-3xl border-b-2 border-dashed border-blue-100 mb-5 pb-5">Question-2: What is the difference between innerHTML, innerText, and textContent ?
+            </h3>
+            <p class="text-[16px] md:text-[20px] text-gray-600">
+                "innerHTML"- It returns the HTML content of an element. <br>
+                "innerText"- It returns the visible text of an element. <br>
+                "textContent"- It returns all the text content of an element including the hidden text.
+            </p>
+        </div>
+        <!-- question no3 -->
+        <div class="bg-white rounded-xl p-7 shadow">
+            <h3 class="font-bold text-[20px] md:text-3xl border-b-2 border-dashed border-blue-100 mb-5 pb-5">Question-3: What is event delegation in the DOM?</h3>
+            <p class="text-[16px] md:text-[20px] text-gray-600">
+                Event delegation refers to the process of using event propagation (bubbling) to handle events at a higher level in the DOM than the element on which the event originated.
+            </p>
+        </div>
+        <!-- question no4 -->
+        <div class="bg-white rounded-xl p-7 shadow">
+            <h3 class="font-bold text-[20px] md:text-3xl border-b-2 border-dashed border-blue-100 mb-5 pb-5">Question-4: What is event bubbling in the DOM?</h3>
+            <p class="text-[16px] md:text-[20px] text-gray-600">
+                Event bubbling is a type of DOM event propagation where the event first triggers on the innermost target element, and then successively triggers on the ancestors (parents) of the target element in the same nesting hierarchy till it reaches the outermost DOM element or document object(Provided the handler is initialized).
+            </p>
+        </div>
+        <!-- question no5 -->
+        <div class="bg-white rounded-xl p-7 shadow">
+            <h3 class="font-bold text-[20px] md:text-3xl border-b-2 border-dashed border-blue-100 mb-5 pb-5">Question-5: How do you create, add, and remove elements using JavaScript?</h3>
+            <p class="text-[16px] md:text-[20px] text-gray-600">
+                "createElement()"- This method creates a new element with the specified tag name.<br>
+                "appendChild()"- This method adds a new child element to the specified parent element.<br>
+                "removeChild()"- This method removes a child element from the specified parent element.
+            </p>
+        </div>
+    </section>
+    
+    <script>
+        document.getElementById("click-nav-btn").addEventListener("click", function(){
+            window.location.href = "./index.html";
+        })
+    </script>
+</body>
+</html>
